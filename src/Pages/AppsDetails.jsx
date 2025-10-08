@@ -17,15 +17,41 @@ const AppsDetails = () => {
 
   const app = apps.find((a) => a.id === Number(id));
 
-  if (!app) return <p>App not found</p>;
+   if (loading) return <p>Loading.......</p>
 
   const {image,title,companyName,downloads,ratingAvg,reviews,size, description,ratings,} = app;
+  //ata intall page handle korbe 
+   
+  const handleAddToInstalledPage = () => {
+  const existingAppList = JSON.parse(localStorage.getItem("installed"));
+  let UpdateAppList = [];
+
+  if (Array.isArray(existingAppList)) {
+   const isDuplicate =existingAppList .some(a => a.id === app.id) 
+  if (isDuplicate) return toast('Already install')
+    // jodi age kichu thake
+    UpdateAppList = [...existingAppList, app];
+  } else {
+    // jodi first time add korte chai
+    UpdateAppList=[app];
+  }
+
+  // updated list ta save koro
+  localStorage.setItem("installed", JSON.stringify(UpdateAppList));
+};
   
+  
+  //eta instaled not intalaed handle kore
   const handleInstall = () => {
     if (!isSelected) {
       setIsSelected(true);
-        toast("✅ App installed successfully!");
-    }}
+        toast("App installed successfully!");
+
+        handleAddToInstalledPage()//ekhane call kore dese jate r call kora na lage
+    }
+}
+
+
 
   return (
     <div className="max-w-screen-2xl mx-auto w-full px-4 md:px-8 lg:px-12 py-4 md:py-8 lg:py-5 space-y-10">
