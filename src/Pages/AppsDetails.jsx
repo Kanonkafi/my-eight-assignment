@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import downloadi from "../assets/icon-downloads.png";
 import rattingi from "../assets/icon-ratings.png";
 import reviewi from "../assets/icon-review.png";
 import { useParams } from "react-router";
 import useApps from "../Hooks/useApps";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";
+import { toast, ToastContainer } from "react-toastify";
 
 const AppsDetails = () => {
   const { id } = useParams();
   const { apps, loading } = useApps();
+  //button er state chenge
+  const [isSelected, setIsSelected] = useState(false)
 
   if (loading) return <p>Loading.......</p>;
 
@@ -16,17 +19,13 @@ const AppsDetails = () => {
 
   if (!app) return <p>App not found</p>;
 
-  const {
-    image,
-    title,
-    companyName,
-    downloads,
-    ratingAvg,
-    reviews,
-    size,
-    description,
-    ratings,
-  } = app;
+  const {image,title,companyName,downloads,ratingAvg,reviews,size, description,ratings,} = app;
+  
+  const handleInstall = () => {
+    if (!isSelected) {
+      setIsSelected(true);
+        toast("✅ App installed successfully!");
+    }}
 
   return (
     <div className="max-w-screen-2xl mx-auto w-full px-4 md:px-8 lg:px-12 py-4 md:py-8 lg:py-5 space-y-10">
@@ -74,8 +73,8 @@ const AppsDetails = () => {
           </div>
 
           {/* Smaller Button */}
-          <button className="mt-5 bg-green-500 text-white font-semibold px-4 py-1.5 rounded-md hover:bg-green-600 transition w-fit">
-            Install Now ({size} MB)
+          <button onClick={handleInstall} className="mt-5 bg-green-500 text-white font-semibold px-4 py-1.5 rounded-md hover:bg-green-600 transition w-fit ">
+             {isSelected ? "Installed" : "Install Now"} ({size} MB)
           </button>
         </div>
       </div>
@@ -105,7 +104,9 @@ const AppsDetails = () => {
         <h3 className="text-lg font-semibold text-gray-900 mb-3">Description</h3>
         <p className="text-gray-600 leading-relaxed">{description}</p>
       </div>
+          <ToastContainer/>
     </div>
+
   );
 };
 
