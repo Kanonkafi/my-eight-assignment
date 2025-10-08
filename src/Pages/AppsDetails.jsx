@@ -6,6 +6,7 @@ import { useParams } from "react-router";
 import useApps from "../Hooks/useApps";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";
 import { toast, ToastContainer } from "react-toastify";
+import LoadingSpinners from "../Componant/LoadingSpinners";
 
 const AppsDetails = () => {
   const { id } = useParams();
@@ -13,11 +14,21 @@ const AppsDetails = () => {
   //button er state chenge
   const [isSelected, setIsSelected] = useState(false)
 
-  if (loading) return <p>Loading.......</p>;
+   if (loading) return <LoadingSpinners />; 
 
   const app = apps.find((a) => a.id === Number(id));
 
-   if (loading) return <p>Loading.......</p>
+ // jodi app khuje napaya jai tahole “App Not Found” dekhabe 
+  if (!app) {
+    return (
+      <div className="flex flex-col items-center justify-center py-20 bg-white rounded-lg shadow-md max-w-xl mx-auto mt-20">
+        <h2 className="text-4xl font-bold text-gray-700 mb-4">App Not Found!</h2>
+        <p className="text-gray-500 text-lg text-center">
+          The app you’re looking for doesn’t exist or has been removed.
+        </p>
+      </div>
+    );
+  }
 
   const {image,title,companyName,downloads,ratingAvg,reviews,size, description,ratings,} = app;
   //ata intall page handle korbe 

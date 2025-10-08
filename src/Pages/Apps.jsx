@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import useApps from '../Hooks/useApps';
 import LoadingSpinners from '../Componant/LoadingSpinners';
 import AppsCards from '../Componant/AppsCards';
@@ -8,7 +8,21 @@ const Apps = () => {
     const {apps,loading}=useApps()
     
   const [search, setSearch] = useState('')
+   const [searchLoading, setSearchLoading] = useState(false); //  state for search loading
+
   const term = search.trim().toLocaleLowerCase()
+
+  // search deyer somoi lodig dekhabe e jonno eti add korse
+  useEffect(() => {
+    if (term) {
+      setSearchLoading(true);
+      const timer = setTimeout(() => setSearchLoading(false), 600); // 0.6s delay
+      return () => clearTimeout(timer);
+    } else {
+      setSearchLoading(false);
+    }
+  }, [term]);
+
   const searchApps = term
     ? apps.filter(app =>
         app.title.toLocaleLowerCase().includes(term)
@@ -39,7 +53,7 @@ const Apps = () => {
               </label>
            </div>
            {
-              loading ? 
+              loading || searchLoading? 
               (
                 < LoadingSpinners/>
               ): isSearchEmpty ? (
