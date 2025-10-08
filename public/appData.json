@@ -1,0 +1,218 @@
+[
+  {
+    "image": "https://i.ibb.co.com/jCr9WQ3/task-Master-Pro.png",
+    "title": "TaskMaster Pro",
+    "companyName": "NextGen Apps",
+    "id": 1,
+    "description": "Manage your daily tasks efficiently with reminders and collaboration tools.",
+    "size": 35,
+    "reviews": 1245,
+    "ratingAvg": 4,
+    "downloads": "9M",
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 575 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/sJXdbpmY/Photo-Ease.webp",
+    "title": "PhotoEase",
+    "companyName": "PixelWorks",
+    "id": 2,
+    "description": "Edit, crop, and enhance photos with AI-powered filters and effects.",
+    "size": 48,
+    "reviews": 980,
+    "ratingAvg": 3,
+    "downloads": "8M",
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 350 },
+      { "name": "5 star", "count": 290 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/d0Z08sv5/fitTrack.png",
+    "title": "FitTrack",
+    "companyName": "Healthify Co.",
+    "id": 3,
+    "description": "Track your fitness goals, calories, and workouts with smart recommendations.",
+    "size": 52,
+    "reviews": 1580,
+    "ratingAvg": 6,
+    "downloads": "7M",
+    "ratings": [
+      { "name": "1 star", "count": 45 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 140 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 935 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/LDrpzdwk/learnify.png",
+    "title": "Learnify",
+    "companyName": "EduTech Labs",
+    "id": 4,
+    "description": "Interactive learning app with courses, quizzes, and video tutorials.",
+    "size": 80,
+    "reviews": 2120,
+    "ratingAvg": 5,
+    "downloads": "6M",
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 160 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 1420 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/67gbNvNT/musicflow.png",
+    "title": "MusicFlow",
+    "companyName": "SoundWave Inc.",
+    "id": 5,
+    "description": "Stream unlimited music with personalized playlists and offline mode.",
+    "size": 60,
+    "reviews": 3050,
+    "ratingAvg": 4,
+    "downloads": "5M",
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 130 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 800 },
+      { "name": "5 star", "count": 1720 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/7Jgh3b0Y/news-Pulse.png",
+    "title": "NewsPulse",
+    "companyName": "InfoWorld Media",
+    "id": 6,
+    "description": "Stay updated with breaking news, live updates, and trending topics.",
+    "size": 28,
+    "reviews": 890,
+    "ratingAvg": 7,
+    "downloads": "12M",
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 220 },
+      { "name": "4 star", "count": 260 },
+      { "name": "5 star", "count": 250 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/TMDFRZjH/foodiehub.png",
+    "title": "FoodieHub",
+    "companyName": "TastyByte",
+    "id": 7,
+    "description": "Order your favorite food and track delivery with real-time updates.",
+    "size": 55,
+    "reviews": 4300,
+    "ratingAvg": 6,
+    "downloads": "9M",
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 130 },
+      { "name": "3 star", "count": 270 },
+      { "name": "4 star", "count": 550 },
+      { "name": "5 star", "count": 3250 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/wFNtPXqQ/shopsmart.png",
+    "title": "ShopSmart",
+    "companyName": "RetailTech",
+    "id": 8,
+    "description": "Compare prices, find discounts, and shop smarter online.",
+    "size": 43,
+    "reviews": 1790,
+    "ratingAvg": 5,
+    "downloads": "10M",
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 260 },
+      { "name": "4 star", "count": 480 },
+      { "name": "5 star", "count": 850 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/RGQJQF9z/travel-Mate.webp",
+    "title": "TravelMate",
+    "companyName": "SkyJourney",
+    "id": 9,
+    "description": "Plan your trips, book flights, and explore destinations with ease.",
+    "size": 67,
+    "reviews": 2300,
+    "ratingAvg": 6,
+    "downloads": "6M",
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 320 },
+      { "name": "4 star", "count": 620 },
+      { "name": "5 star", "count": 1110 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/21GJBV3G/budgetbuddy.png",
+    "title": "BudgetBuddy",
+    "companyName": "FinanceFix",
+    "id": 10,
+    "description": "Track expenses, set budgets, and analyze your financial habits.",
+    "size": 32,
+    "reviews": 1320,
+    "ratingAvg": 5,
+    "downloads": "9M",
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 180 },
+      { "name": "4 star", "count": 420 },
+      { "name": "5 star", "count": 590 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/r2SD0BFT/notecraft.png",
+    "title": "NoteCraft",
+    "companyName": "Paperless Studio",
+    "id": 11,
+    "description": "Organize your notes, tasks, and ideas all in one place.",
+    "size": 41,
+    "reviews": 1100,
+    "ratingAvg": 4,
+    "downloads": "3M",
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 350 },
+      { "name": "5 star", "count": 390 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/XrL59G2N/calmspace.webp",
+    "title": "CalmSpace",
+    "companyName": "MindEase Labs",
+    "id": 12,
+    "description": "Meditation and relaxation app to reduce stress and improve focus.",
+    "size": 58,
+    "reviews": 2550,
+    "ratingAvg": 3,
+    "downloads": "9M",
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 130 },
+      { "name": "4 star", "count": 370 },
+      { "name": "5 star", "count": 1940 }
+    ]
+  }
+]
